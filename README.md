@@ -111,5 +111,5 @@ library(doris)
 and start the app with:
 
 ``` r
-#run_doris()
+run_doris()
 ```
