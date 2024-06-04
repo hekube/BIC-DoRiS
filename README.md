@@ -95,6 +95,14 @@ You can install and load the development version from
 
 ``` r
 # install.packages("devtools")
+# install.packages("shiny")
+# install.packages("shinyWidgets")
+# install.packages("bslib")
+# install.packages("bsplus")
+# install.packages("shinyBS")
+# install.packages("DT")
+# install.packages("tidyr")
+# install.packages("dplyr")
 devtools::install_github("https://github.com/hekube/BIC-DoRiS")
 library(doris)
 ```
