@@ -104,7 +104,6 @@ You can install and load the development version from
 # install.packages("tidyr")
 # install.packages("dplyr")
 devtools::install_github("https://github.com/hekube/BIC-DoRiS")
-library(bsplus)
 library(doris)
 ```
 
