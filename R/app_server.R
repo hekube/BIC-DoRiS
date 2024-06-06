@@ -5,6 +5,7 @@
 #' @import shiny
 #' @import shinyWidgets
 #' @import bslib
+#' @import bsplus
 #' @import shinyBS
 #' @import DT
 #' @import tidyr
