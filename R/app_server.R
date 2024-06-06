@@ -14,6 +14,7 @@
 library(shiny)
 library(shinyWidgets)
 library(bslib)
+library(bsplus)
 library(shinyBS)
 library(DT)
 library(tidyr)
