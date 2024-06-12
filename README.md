@@ -90,8 +90,8 @@ Figure 3: Exemplary results of searching for subgroups deviating from the overal
 
 ### Download test data
 
-Go into directory "Data" and download file „dorisExampleData.csv" which includes simulated data. The first 4 records are:
-``` r
+Go into directory "Data" and download file "dorisExampleData.csv" which includes simulated data. The first 4 records are:
+```
 bmi,age,race,sex,type,dose,target
 low BMI,<40 years,White,Female,Acute disease,0,0.0526818366
 high BMI,>=40 years,White,Female,Acute disease,0,-1.068076082
@@ -127,4 +127,4 @@ and start the app with
 ``` r
 run_doris()
 ```
-All needed packages are loaded by the app automatically. For a reason unknown until now it may be necessary to load “dplyr“ manually.
+All needed packages are loaded automatically by the app. For a reason unknown until now it may be necessary to load “dplyr“ manually.
