@@ -101,7 +101,7 @@ low BMI,>=40 years,White,Female,Acute disease,0,0.923497978
 ### Required packages
 
 Some packages need to be available for running DoRiS. You may copy the subsequent statements for your convenience.
-
+``` r
 install.packages("devtools")
 install.packages("shiny")
 install.packages("shinyWidgets")
@@ -111,7 +111,7 @@ install.packages("shinyBS")
 install.packages("DT")
 install.packages("tidyr")
 install.packages("dplyr")
-
+```
 
 ### Installation
 
