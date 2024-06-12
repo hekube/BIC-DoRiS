@@ -30,9 +30,9 @@ after the active doses. Next, it is specified a clinically meaningful difference
 delta the user is interested in. If the target variable is the change in blood
 pressure the user may select a difference of 5 mmHg. 
 
-<img src='inst/app/www/Screenshot_doris_presentation_options_newer.png'>
+<img src='inst/app/www/Figure1.png'>
 
-Figure 1: Identification of subgroups deviating from the overall dose response.
+Figure 1: Identification of subgroups deviating from the overall dose response 
 
 
 Figure 1 presents a screenshot from the DoRiS application 
@@ -73,19 +73,19 @@ like in Figure 3. A list of all subgroups sorted by the total truth
 values with the best fitting subgroup at the top can be seen on the 
 left side in the DoRiS application. On the right side the dose 
 reponse curve for the respective subgroup is displayed together with 
-a histogram of the total truth values from the 500 permutations. 
+a histogram of the total truth values from the 1000 permutations. 
 Only very few of the simulated total truth values are larger than the observed 
 total truth value in this example – which is presented as a dashed line – which
-results in a small p-value of 0.012.
+results in a small p-value of 0.005.
 
 Interesting deviating subgroups can then be further explored 
 with the team. Can the exposure data explain the observed deviation? 
 Do PK/PD models support the deviation in dose response? Is there any 
 literature available describing mechanisms explaining the observed deviation? 
 
-<img src='inst/app/www/Screenshot_doris_presentation_newer.png'>
+<img src='inst/app/www/Figure3.png'>
 
-Figure 3: Exemplary results of searching for subgroups deviating from the overall dose response 
+Figure 3: Exemplary results of searching for subgroups deviating from the overall dose response based on the settings shown in Figure 1 for the example data set for DoRiS 
 
 
 ## Installation
@@ -95,20 +95,12 @@ You can install and load the development version from
 
 ``` r
 # install.packages("devtools")
-# install.packages("shiny")
-# install.packages("shinyWidgets")
-# install.packages("bslib")
-# install.packages("bsplus")
-# install.packages("shinyBS")
-# install.packages("DT")
-# install.packages("tidyr")
-# install.packages("dplyr")
-devtools::install_github("https://github.com/hekube/BIC-DoRiS")
+devtools::install_github(".../doris")
 library(doris)
 ```
 
 and start the app with:
 
 ``` r
-run_doris()
+#run_doris()
 ```
