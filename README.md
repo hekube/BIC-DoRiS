@@ -88,19 +88,43 @@ literature available describing mechanisms explaining the observed deviation?
 Figure 3: Exemplary results of searching for subgroups deviating from the overall dose response based on the settings shown in Figure 1 for the example data set for DoRiS 
 
 
+## Download test data
+
+Go into directory "Data" and download file „dorisExampleData.csv" which includes simulated data. The first 4 records are:
+
+bmi,age,race,sex,type,dose,target
+low BMI,<40 years,White,Female,Acute disease,0,0.0526818366
+high BMI,>=40 years,White,Female,Acute disease,0,-1.068076082
+low BMI,>=40 years,White,Female,Acute disease,0,0.923497978
+
+
+## Required packages
+
+Some packages need to be available for running DoRiS. You may copy the subsequent statements for your convenience.
+
+install.packages("devtools")
+install.packages("shiny")
+install.packages("shinyWidgets")
+install.packages("bslib")
+install.packages("bsplus")
+install.packages("shinyBS")
+install.packages("DT")
+install.packages("tidyr")
+install.packages("dplyr")
+
+
 ## Installation
 
-You can install and load the development version from
-[GitHub](https://github.com/) with:
-
+Use the R-statement
 ``` r
-# install.packages("devtools")
-devtools::install_github(".../doris")
+devtools::install_github("https://github.com/hekube/BIC-DoRiS")
+```
+to install DoRiS from GitHub, load it with
+``` r
 library(doris)
 ```
-
-and start the app with:
-
+and start the app with 
 ``` r
-#run_doris()
+run_doris()
 ```
+All needed packages are loaded by the app automatically. For a reason unknown until now it may be necessary to load “dplyr“ manually.
