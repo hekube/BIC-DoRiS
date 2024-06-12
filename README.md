@@ -88,17 +88,17 @@ literature available describing mechanisms explaining the observed deviation?
 Figure 3: Exemplary results of searching for subgroups deviating from the overall dose response based on the settings shown in Figure 1 for the example data set for DoRiS 
 
 
-## Download test data
+### Download test data
 
 Go into directory "Data" and download file „dorisExampleData.csv" which includes simulated data. The first 4 records are:
-
+``` r
 bmi,age,race,sex,type,dose,target
 low BMI,<40 years,White,Female,Acute disease,0,0.0526818366
 high BMI,>=40 years,White,Female,Acute disease,0,-1.068076082
 low BMI,>=40 years,White,Female,Acute disease,0,0.923497978
+```
 
-
-## Required packages
+### Required packages
 
 Some packages need to be available for running DoRiS. You may copy the subsequent statements for your convenience.
 
@@ -113,7 +113,7 @@ install.packages("tidyr")
 install.packages("dplyr")
 
 
-## Installation
+### Installation
 
 Use the R-statement
 ``` r
